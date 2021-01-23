@@ -9,7 +9,7 @@ namespace SalesWebMVC.Data
 {
     public class SeedingService
     {
-        private SalesWebMVCContext _context;
+        private readonly SalesWebMVCContext _context;
 
         public SeedingService(SalesWebMVCContext context)
         {
@@ -18,7 +18,7 @@ namespace SalesWebMVC.Data
 
         public void Seed()
         {
-            if (_context.Department.Any() || _context.Seller.Any() || _context.SalesRecord.Any())
+            if ( _context.Department.Any() || _context.Seller.Any() || _context.SalesRecord.Any() )
             {
                 return; // BD já foi populado
             }
