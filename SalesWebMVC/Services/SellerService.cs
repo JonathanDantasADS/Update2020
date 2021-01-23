@@ -65,6 +65,5 @@ namespace SalesWebMVC.Services
                 throw new DbConcurrencyException(e.Message);
             }
         }
-
     }
 }
