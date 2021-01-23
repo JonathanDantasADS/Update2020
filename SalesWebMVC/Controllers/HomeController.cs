@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SalesWebMVC.Models;
+using SalesWebMVC.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+
 
 namespace SalesWebMVC.Controllers
 {
@@ -17,7 +18,8 @@ namespace SalesWebMVC.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Pagina ainda está em construção";
+            
 
             return View();
         }
@@ -25,6 +27,7 @@ namespace SalesWebMVC.Controllers
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
+            ViewData["Contato"] = "Jonathan@gmail.com";
 
             return View();
         }
